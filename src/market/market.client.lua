@@ -33,7 +33,7 @@ local market = {
 --
 function exitMarket()
 
-	if exports.ft_libs:PrimaryMenu() == "ft_exemple:market" then
+	if exports.ft_libs:GetPrimaryMenu() == "ft_exemple:market" then
 		exports.ft_libs:CloseMenu()
 	end
 
@@ -98,6 +98,11 @@ function init()
 	})
 
 end
+
+TriggerServerEvent("ft_libs:PrintTable", {
+	text = "toto",
+	text2 = "toto2",
+})
 
 --
 --
