@@ -99,11 +99,6 @@ function init()
 
 end
 
-TriggerServerEvent("ft_libs:PrintTable", {
-	text = "toto",
-	text2 = "toto2",
-})
-
 --
 --
 --
