@@ -1,6 +1,6 @@
 --
 -- @Project: FiveM Tools
--- @Author: THEJean-Kevin
+-- @Authors: THEJean-Kevin, Samuelds
 -- @License: GNU General Public License v3.0
 --
 
@@ -9,22 +9,22 @@ local market = {
 	{
 		x=-48.816,
 		y=-1757.354,
-		z=29.421
+		z=29.421,
 	},
 	{
-		x=26.276,
-		y=-1346.602,
-		z=29.497
+		x = 26.276,
+		y = -1346.602,
+		z = 29.497,
 	},
 	{
-		x=-708.328,
-		y=-914.421,
-		z=19.215
+		x = -708.328,
+		y = -914.421,
+		z = 19.215,
 	},
 	{
-		x=-1223.596,
-		y=-906.664,
-		z=12.326
+		x = -1223.596,
+		y = -906.664,
+		z = 12.326,
 	},
 }
 
@@ -33,7 +33,7 @@ local market = {
 --
 function exitMarket()
 
-	if exports.ft_libs:GetPrimaryMenu() == "ft_exemple:market" then
+	if exports.ft_libs:GetPrimaryMenu() == "ft_libs_exemples_market:MarketMenu" then
 		exports.ft_libs:CloseMenu()
 	end
 
@@ -47,7 +47,7 @@ function openMarket()
 	if not exports.ft_libs:MenuIsOpen() then
 		exports.ft_libs:HelpPromt("Press ~INPUT_CONTEXT~ to ~g~buy")
 		if IsControlJustPressed(1, 51) then
-			exports.ft_libs:OpenMenu("ft_exemple:market")
+			exports.ft_libs:OpenMenu("ft_libs_exemples_market:MarketMenu")
 		end
 	end
 
@@ -59,7 +59,7 @@ end
 function init()
 
 	--
-	exports.ft_libs:AddArea("ft_exemple:market", {
+	exports.ft_libs:AddArea("ft_libs_exemples_market:MarketMenu", {
 		marker = {
 			text = "Market",
 			weight = 1,
@@ -86,7 +86,7 @@ function init()
 	})
 
 	--
-	exports.ft_libs:AddMenu("ft_exemple:market",{
+	exports.ft_libs:AddMenu("ft_libs_exemples_market:MarketMenu",{
 		menuTitle = "Market menu",
 		closable = true,
 		buttons = {

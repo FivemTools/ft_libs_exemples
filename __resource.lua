@@ -15,6 +15,14 @@ client_scripts {
     -- Market exemple
     "src/market/market.client.lua",
 
+    -- Test menu
+    "src/tests/blip.client.lua",
+    "src/tests/trigger.client.lua",
+    "src/tests/marker.client.lua",
+    "src/tests/area.client.lua",
+    "src/tests/ui.client.lua",
+    "src/tests/init.client.lua",
+
 }
 
 server_scripts {}
