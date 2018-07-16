@@ -10,10 +10,10 @@
 local function HelpPrompt()
 
 	local text = exports.ft_libs:OpenTextInput({
-        title = "Text",
-        customTitle = true,
-        defaultText = "Hello World !",
-    })
+		title = "Text",
+		customTitle = true,
+		defaultText = "Hello World !",
+	})
 	exports.ft_libs:HelpPromt(text)
 
 end
@@ -24,10 +24,10 @@ end
 local function LoadingPrompt()
 
 	local text = exports.ft_libs:OpenTextInput({
-        title = "Text",
-        customTitle = true,
-        defaultText = "Hello World !",
-    })
+		title = "Text",
+		customTitle = true,
+		defaultText = "Hello World !",
+	})
 	exports.ft_libs:LoadingPromt({
 		text = text,
 		time = 5000,
@@ -43,10 +43,10 @@ end
 local function Notification()
 
 	local text = exports.ft_libs:OpenTextInput({
-        title = "Text",
-        customTitle = true,
-        defaultText = "Hello World !",
-    })
+		title = "Text",
+		customTitle = true,
+		defaultText = "Hello World !",
+	})
 	exports.ft_libs:Notification(text)
 
 end
@@ -57,10 +57,10 @@ end
 local function AdvancedNotification()
 
 	local text = exports.ft_libs:OpenTextInput({
-        title = "Text",
-        customTitle = true,
-        defaultText = "Hello World !",
-    })
+		title = "Text",
+		customTitle = true,
+		defaultText = "Hello World !",
+	})
 	exports.ft_libs:AdvancedNotification({
 		text = text,
 		title = "Title exemple",
@@ -75,10 +75,10 @@ end
 local function Text()
 
 	local text = exports.ft_libs:OpenTextInput({
-        title = "Text",
-        customTitle = true,
-        defaultText = "Hello World !",
-    })
+		title = "Text",
+		customTitle = true,
+		defaultText = "Hello World !",
+	})
 	exports.ft_libs:Text({
 		text = text,
 		x = 0.9,
@@ -93,10 +93,10 @@ end
 local function TextNotification()
 
 	local text = exports.ft_libs:OpenTextInput({
-        title = "Text",
-        customTitle = true,
-        defaultText = "Hello World !",
-    })
+		title = "Text",
+		customTitle = true,
+		defaultText = "Hello World !",
+	})
 	exports.ft_libs:TextNotification({
 		text = text,
 		time = 5000,
@@ -110,10 +110,10 @@ end
 local function Show3DText()
 
 	local text = exports.ft_libs:OpenTextInput({
-        title = "Text",
-        customTitle = true,
-        defaultText = "Hello World !",
-    })
+		title = "Text",
+		customTitle = true,
+		defaultText = "Hello World !",
+	})
 	local playerPed = GetPlayerPed(-1)
 	local playerPos = GetEntityCoords(playerPed, true)
 	exports.ft_libs:Show3DText({
