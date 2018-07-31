@@ -60,7 +60,7 @@ AddEventHandler('ft_libs:OnClientReady', function()
                     exports.ft_libs:OpenMenu("ft_libs_exemples_test:HomeMenu")
                 end
             end
-            Citizen.Wait(10)
+            Citizen.Wait(5)
         end
     end)
 
