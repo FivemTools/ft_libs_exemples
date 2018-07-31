@@ -19,7 +19,7 @@ AddEventHandler('ft_libs:OnClientReady', function()
     -- Home menu
     exports.ft_libs:AddMenu("ft_libs_exemples_test:HomeMenu", {
         title = "Debug Test",
-        menuTitle = "Sub title DEbug",
+        menuTitle = "Sub title Debug",
         buttons = {
             {
                 text = "Blip",
