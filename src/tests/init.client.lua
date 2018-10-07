@@ -53,7 +53,7 @@ AddEventHandler('ft_libs:OnClientReady', function()
         while true do
             if IsControlJustPressed(1, 288) then
                 if exports.ft_libs:MenuIsOpen() then
-                    if exports.ft_libs:PrimaryMenu() == "ft_libs_exemples_test:HomeMenu" then
+                    if exports.ft_libs:GetPrimaryMenu() == "ft_libs_exemples_test:HomeMenu" then
                         exports.ft_libs:CloseMenu()
                     end
                 else
